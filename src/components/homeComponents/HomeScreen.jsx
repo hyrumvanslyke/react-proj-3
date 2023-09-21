@@ -1,6 +1,6 @@
 import React from 'react'
 import AdBanner from './AdBanner'
-import { useEffect } from 'react'
+import { useEffect, useState} from 'react'
 import axios from 'axios'
 import RecipeContainer from './RecipeContainer'
 

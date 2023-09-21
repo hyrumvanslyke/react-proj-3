@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./RecipeCard.module.css";
 import { useNavigate } from "react-router-dom";
-const RecipeCard = () => {
+const RecipeCard = ({recipe}) => {
     const navigate = useNavigate()
 
     const handleClick = () =>{
@@ -11,7 +11,7 @@ const RecipeCard = () => {
     <div className={styles.recipe_card}>
       <div>
         <div className={styles.recipe_img_container}>
-            <img src={recipe.image_url} alt="Recipe Picture" />
+            <img src={recipe.image_url} alt="Recipe" />
         </div>
         <h3>{recipe.recipe_name}</h3>
       </div>
