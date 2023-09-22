@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./Details.module.css";
-import moreStyles from '../homeComponents/Home.module.css'
+
 
 const DetailImage = ({ image, title }) => {
-  const backgroundString = `--background: url(${image})`
   return (
     <div
       className={styles.banner}
